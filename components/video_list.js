@@ -85,6 +85,7 @@ class VideoList extends Component {
           backgroundColor="#c4302b"
           showsCancelButton={false}
           textFieldBackgroundColor="#c4302b"
+          value={this.state.query}
           onChangeText={(query) => {
             this.setState({ query });
             this.fetchData();
